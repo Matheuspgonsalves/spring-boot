@@ -70,6 +70,19 @@ Link para instalação no Linux: [Docker](https://docs.docker.com/desktop/setup/
 
 ## Modulo 2 Primeiros passos
 
-### Aula 1 Criando um projeto
+### Aula 7 Criando um projeto
 
 O site [Spring Initialzr](https://start.spring.io) é uma boa alternativa para começar o projeto. Após nomear o projeto e seu Group, basta apenas definir as dependências que serão utilizadas.
+
+### Aula 8 Conhecendo a estrutura do projeto e dicas Maven
+
+**Anotações aprendidas**
+ - @SpringBootApplication: Essa é a anotação que starta o projeto Spring
+
+ ### Aula 9 Hello World com Spring Boot
+
+**Anotações aprendidas**
+- @RestController(): Transforma a classe em controlador Rest para que seja possível o mapeamento dos métodos.
+
+ - @GetMapping(): Essa anotação quer dizer que estou mapeando o retorno do método para uma chamada *GET*. Ao mapear, eu passo entre parênteses o caminho da URL de minha preferência.
+ 
