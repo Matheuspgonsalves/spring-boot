@@ -98,4 +98,41 @@ O site [Spring Initialzr](https://start.spring.io) é uma boa alternativa para c
 
 - @RequestBody: Serve para colocar os dados JSON no objeto do controller
 
- 
+ ### Aula 11 Aprendendo a configurar conexao com banco de dados
+
+ **Properties**
+
+No projeto Spring Boot há arquivos de configuração. Existe o .properties e o .yml. Neste curso prosseguiremos com o .yml para realizar as configurações de forma mais moderna.
+
+Exemplo de "application.yml":
+ ```
+ spring:
+  application:
+    name: Produtos API
+  datasource:
+    url: jdbc:h2:mem:produtos
+    username: sa
+    password: admin
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+ ```
+
+ ### Aula 12 Executando SQL ao subir aplicação
+
+**Como será executado?**
+O arquivo data.sql dentro da pasta resources será executado e criará a tabela do banco de dados.
+
+Exemplo de "data.sql":
+
+```
+create table produto (
+    id varchar(255) not null primary key,
+    nome varchar(90) not null,
+    descricao varchar(300),
+    preco numeric(18, 2) not null
+)
+```
