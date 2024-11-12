@@ -64,8 +64,12 @@ Link para instalação: [POSTMAN](https://www.postman.com/downloads/)
 
 **Instalação do Docker**
 
-
-
 Link para instalação no windows: [Docker](https://www.docker.com/products/docker-desktop/)
 
 Link para instalação no Linux: [Docker](https://docs.docker.com/desktop/setup/install/linux/)
+
+## Modulo 2 Primeiros passos
+
+### Aula 1 Criando um projeto
+
+O site [Spring Initialzr](https://start.spring.io) é uma boa alternativa para começar o projeto. Após nomear o projeto e seu Group, basta apenas definir as dependências que serão utilizadas.
