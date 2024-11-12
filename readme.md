@@ -85,4 +85,17 @@ O site [Spring Initialzr](https://start.spring.io) é uma boa alternativa para c
 - @RestController(): Transforma a classe em controlador Rest para que seja possível o mapeamento dos métodos.
 
  - @GetMapping(): Essa anotação quer dizer que estou mapeando o retorno do método para uma chamada *GET*. Ao mapear, eu passo entre parênteses o caminho da URL de minha preferência.
+
+### Aula 10 Criando endpoints para recebimento dos produtos
+
+**Novos conhecimentos**
+- Model: É uma pasta para organizar a classe que representa uma entidade ou modelo. Ela define a estrutura dos dados que serão manipulados durante a aplicação.
+
+- Controller: É uma classe que vai receber requisições REST.
+
+**Anotações aprendidas**
+- @RequestMapping(): Serve para passar a URL base do controller 
+
+- @RequestBody: Serve para colocar os dados JSON no objeto do controller
+
  
