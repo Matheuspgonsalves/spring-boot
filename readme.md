@@ -136,3 +136,16 @@ create table produto (
     preco numeric(18, 2) not null
 )
 ```
+
+### Aula 13 Criando o mapeamento JPA para entidade Produto
+
+O mapeamento JPA (Java Persistence API) serve para fornecer uma forma de mapear objetos Java para tabelas de um banco de dados relacional. O JPA é uma especificação que permite gerenciar a persistência de dados em uma aplicação Java, facilitando o armazenamento e a recuperação de objetos Java no banco de dados sem precisar escrever SQL manualmente.
+
+**Anotações aprendidas**
+
+ - @Entity: é uma anotação para mapear a entidade para o banco de dados (tabela).
+ - @Column(): define as colunas da entidade (colunas). Caso o nome das variaveis se diferencie do nome no banco de dados, existe a possibilidade de mapear isso na chamada. Basta colocar (name = "nome_do_atributo").
+
+ - @Table: tem as mesmas usabilidades da anotação @Column, com a possibilidade de mapear a entidade, caso o nome da classe também esteja diferente do banco de dados. Basta colocar (name = "nome_da_tabela").
+
+ - @Id: a variavel que representar a primary key deverá conter essa anotação.
