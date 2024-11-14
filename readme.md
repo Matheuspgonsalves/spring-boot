@@ -244,4 +244,20 @@ Já temos mapeado no controller a operação para salver os produto, utilizando 
  **Anotações aprendidas**
  - @DeleteMapping("{id}): é a operação de exclusão de um item. Assim como o *GET*, é necessário passar o elemento por parâmetro na url e utilizar o @PathVariable("id"). 
 
+Este é o codigo para deletar produtos:
+
+````
+@DeleteMapping("{id}")
+    public void deletar(@PathVariable("id") String id){
+        produtoRepository.deleteById(id) ;
+    }
+````
+
+ ### Aula 17 Atualizando os dados de um produto
+
+ Por último, será criado o método para atualizar o produto, para completar as operações do nosso CRUD.
+
+ **Anotações aprendidas**
+ - @PutMapping("{id}"): essa é a operação de atualização do produto. Assim como *GET* e *DELETE*, essa anotação vai receber um parâmetro para enviar no @PathVariable("id"). 
+
 **Para conseguir ter uma maior velocidade no avanço do curso, estarei pausando as anotações e resumo das aulas por aqui, mas continuarei commitando os códigos das próximas aulas.**
