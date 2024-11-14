@@ -237,4 +237,11 @@ Já temos mapeado no controller a operação para salver os produto, utilizando 
 
  As linhas comentadas são outra forma de realizar o return da nossa busca.
 
+ ### Aula 16 Deletando produtos
+
+ Uma das etapas do CRUD é o delete de produtos, que será realizado nessa aula.
+
+ **Anotações aprendidas**
+ - @DeleteMapping("{id}): é a operação de exclusão de um item. Assim como o *GET*, é necessário passar o elemento por parâmetro na url e utilizar o @PathVariable("id"). 
+
 **Para conseguir ter uma maior velocidade no avanço do curso, estarei pausando as anotações e resumo das aulas por aqui, mas continuarei commitando os códigos das próximas aulas.**
