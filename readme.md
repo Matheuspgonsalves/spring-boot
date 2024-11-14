@@ -216,3 +216,25 @@ public class ProdutoController {
 }
 
 ```
+
+### Aula 15 Obtendo os dados do produto
+
+Já temos mapeado no controller a operação para salver os produto, utilizando o POST. Nesta aula, será mapeado o método para obter os produtos através da operação GET.
+
+**Anotações aprendidas**
+ - @PathVariable("id"): essa anotação permite que eu insira o id, ou elemento pra pesquisa em questão, pela url. Usando a anotação @GetMapping("/{id}"), eu posso definir o elemento que vai ser usado na url. O elemento dentro de chaves vai servir como parâmetro.
+
+ Construimos o método "obterPorId", da seguinte forma:
+ ````
+ @GetMapping("/{id}")
+    public Produto obterPorId(@PathVariable("id") String id){
+//        Optional<Produto> produto = produtoRepository.findById(id);
+//        return produto.isPresent() ? produto.get() : null;
+
+        return produtoRepository.findById(id).orElse(null);
+    }
+ ````
+
+ As linhas comentadas são outra forma de realizar o return da nossa busca.
+
+**Para conseguir ter uma maior velocidade no avanço do curso, estarei pausando as anotações e resumo das aulas por aqui, mas continuarei commitando os códigos das próximas aulas.**
